@@ -1,0 +1,9 @@
+#extend("base")
+
+#export("head") {}
+
+#export("body") {
+    <div class="message">
+    <pre>#(code)</pre>
+    </div>
+}
