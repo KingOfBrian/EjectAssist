@@ -10,17 +10,44 @@ drop.get { req in
 }
 
 drop.post("eject") { req in
-    var code: String = ""
+    var code: [String] = []
+    var variableWarnings: [String] = []
+    var unknownWarnings: [String] = []
     if let xibPart = req.multipart?["xib"], let file = xibPart.file {
         let bytes = file.data
         let data = Data(bytes: bytes)
-        let builder = try XIBParser(data: data)
-        code = builder.document.generateCode().joined(separator: "\n")
+        let document = try XIBParser(data: data).document
+        document.scanForDuplicateVariableNames()
+        code = document.generateCode()
+        unknownWarnings = document.warnings.map() { (warning) -> String? in
+            if case let .unknownAttribute(message) = warning {
+                return message
+            }
+            return nil
+        }.flatMap() { $0 }
+        variableWarnings = document.warnings.map() { (warning) -> String? in
+            if case let .duplicateVariable(message) = warning {
+                return message
+            }
+            return nil
+        }.flatMap() { $0 }
     }
-
+    var joiningWords = ["with", "and"]
+    var summary = ["\(code.count) lines of code generated"]
+    if variableWarnings.count > 0 {
+        summary.append(joiningWords.removeFirst())
+        summary.append("\(variableWarnings.count) duplicate variable names")
+    }
+    if unknownWarnings.count > 0 {
+        summary.append(joiningWords.removeFirst())
+        summary.append("\(unknownWarnings.count) unknown attributes")
+    }
     return try drop.view.make("result", [
-        "code": code
-        ])
+        "summary": summary.joined(separator: " "),
+        "code": code.joined(separator: "\n"),
+        "variableWarnings": variableWarnings.joined(separator: "\n"),
+        "unknownWarnings": unknownWarnings.joined(separator: "\n"),
+    ])
 }
 
 // Future version should allow for browsing:
