@@ -2,8 +2,14 @@
 <html>
 <head>
   <title>Eject</title>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/app.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+  </style>
+  <link rel="stylesheet" href="/styles/css/app.css">
+  <link rel="stylesheet" href="styles/css/foundation.css" />
+  <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+
+
   #import("head")
 </head>
   <body>

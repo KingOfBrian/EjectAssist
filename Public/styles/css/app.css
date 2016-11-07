@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+    margin:40px auto;
+    line-height:1.6;
+    font-size:18px;
+    color:#444;
+    padding:0 10px;
+		font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1,h2,h3{line-height:1.2}
+
+.header {
+	font-family: 'Quicksand', sans-serif;
+	background: #83a6b3;
+  background-size: cover;
+	position: relative;
+	padding-top: 2.5rem;
+  border-style: solid;
+ 	padding-bottom: 3rem; }
+  .headline {
+	 color: #ffe; }
+}
+
+.message{
+	text-align: center;
+}
+
+.message .message-container{
+  padding-top: 3rem;
+	border-style: solid;
+  border-top: none;
+	text-align: center;
+	}
+
+.message form input{
+}

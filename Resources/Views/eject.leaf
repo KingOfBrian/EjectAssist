@@ -3,15 +3,19 @@
 #export("head") {}
 
 #export("body") {
-  <div class="message">
-    <h1>Eject from Interface Builder</h1>
+  <div class="small-8 large-centered columns message">
+    <div class="header">
+      <h1>Eject from Interface Builder</h1>
+    </div>
 
-    Eject will generate swift code to replace your .xib file.
-
-    <form action="eject" method="POST" enctype="multipart/form-data">
-      <input type="file" name="xib">
-      <input type="checkbox" name="saveXML" value="YES" checked="checked">Make the XML and code public to help improve the product<br>
-      <input type="submit" value="Eject">
-    </form>
+    <div class="message-container">
+      <div class="small-8 large-centered columns">
+        <h3>Eject will generate swift code to replace your .xib file.</h3>
+      </div>
+      <form action="eject" method="POST" enctype="multipart/form-data">
+        <input type="file" name="xib">
+        <button type="submit" class="eject button">Eject</button>
+      </form>
+    </div>
   </div>
 }
