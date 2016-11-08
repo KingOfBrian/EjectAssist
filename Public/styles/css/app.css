@@ -1,35 +1,42 @@
-  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 * {
 	box-sizing: border-box;
 }
 
 body{
-    background-image: url('../../images/stardust.png');
+  background-image: url('../../images/dark_dotted2.png');
+  font-size:18px;
+  color: white;
+  padding:15 10px;
+  line-height:1.6;
+}
+
+.message{
     margin:40px auto;
     line-height:1.6;
     font-size:18px;
     color: white;
     padding:15 10px;
 		font-family: 'Quicksand', sans-serif;
-    max-width: 900px;
+    max-width: 1000px;
 
 }
 
 .header {
 	font-family: 'Quicksand', sans-serif;
-	background: #83a6b3;
-  background-size: cover;
   text-align: center;
-	position: relative;
+  font-weight: bolder;
 	padding-top: 2.5rem;
-  border-style: solid;
  	padding-bottom: 3rem; }
+
+.tagline {
+  text-align: center;
+  }
 
 .message-container{
   display: block;
-  padding-top: 3rem;
-	border-style: solid;
+  padding-top: 1rem;
   border-top: none;
 	text-align: center;
 	}
@@ -38,74 +45,37 @@ body{
     margin: 20px;
     }
 
-    .eject {
-      width: 30%;
-    }
-
 .question-container {
   text-align: center;
   font-weight: bold;
+  margin: 50px;
+  margin-top: 10rem;
 }
 
-.question-container h4 {
-  margin: 20px;
+.question-container h3 {
+  text-decoration: underline;
 }
 
-.summary,
+.question{
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.summary {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
 .variable-warnings pre{
   font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
   color: red;
-  font-weight: bolder;
-  margin: 30px;
+  margin: 22px;
   text-align: center;
 }
 
 .unknown-warnings {
-  margin: 30px;
-}
-
-button.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: center;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-button.accordion p{
-  margin-bottom: none;
-  color: green;
-}
-
-button.accordion.active, button.accordion:hover {
-  background-color: #ddd;
-}
-
-div.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-}
-
-div.panel.show {
-  display: block;
-  color: #444;
-  background-color: white;
-}
-
-button.accordion:after {
-    content: '\02795'; /
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-button.accordion.active:after {
-    content: "\2796";
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }

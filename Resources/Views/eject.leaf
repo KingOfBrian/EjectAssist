@@ -17,24 +17,23 @@
       <form action="eject" method="POST" enctype="multipart/form-data">
         <label for="FileUpload" class="expanded button">Upload File</label>
         <input type="file" name="xib" id="FileUpload" class="show-for-sr expanded button">
-        <button type="submit" class="eject button">Eject</button>
+        <button type="submit" class="expanded eject button">Eject</button>
       </form>
     </div>
 
   <div class="question-container">
-    <h4> Question & Answer </h4>
-    <button class="accordion">Question 1</button>
-      <div class="panel">
-        <p>Answer</p>
+    <h2> FAQs </h2>
+      <div class="question">
+        <p>Question</p>
       </div>
-
-    <button class="accordion">Question 2</button>
-      <div class="panel">
-        <p>Answer</p>
+      <div class="answer">
+        <p> Answer </p>
       </div>
-    <button class="accordion">Question 3</button>
-      <div class="panel">
-        <p>Answer</p>
+      <div class="question">
+        <p>Question</p>
+      </div>
+      <div class="answer">
+        <p> Answer </p>
       </div>
     </div>
   </div>
