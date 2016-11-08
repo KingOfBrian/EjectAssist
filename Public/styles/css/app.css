@@ -38,11 +38,17 @@ body{
     margin: 20px;
     }
 
+    .eject {
+      width: 30%;
+    }
 
 .question-container {
-  margin: 20px;
   text-align: center;
   font-weight: bold;
+}
+
+.question-container h4 {
+  margin: 20px;
 }
 
 .summary,

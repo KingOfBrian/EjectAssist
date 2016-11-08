@@ -5,12 +5,13 @@
 #export("body") {
   <div class="small-12 medium-8 large-centered columns message">
     <div class="header">
-      <h1>Eject from Interface Builder</h1>
+      <div class"eject"><h1>Eject</h1></div>
+        <h3>from Interface Builder</h3>
     </div>
 
     <div class="message-container">
       <div class="tagline">
-        <h3>Eject will generate swift code to replace your .xib file.</h3>
+        <h4>Eject will generate swift code to replace your .xib file.</h4>
       </div>
 
       <form action="eject" method="POST" enctype="multipart/form-data">
@@ -21,19 +22,29 @@
     </div>
 
     <div class="question-container">
-      <ul class="accordion" data-accordion role="tablist">
-        <li class="accordion-item is-active">
-          <a href="/"role="tab" class="accordion-title" id="question1-heading" aria-controls="question1"><b>Question 1</b></a>
-          <div id="question1" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="question1-heading">
-              Answer
+      <h4> Question & Answer </h4>
+      <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordian-item>
+          <a href="/" class="accordion-title"><b>Question 1</b></a>
+          <div class="accordion-content" data-tab-content>
+              <b>Answer</b>
           </div>
         </li>
-        <li class="accordion-item is-active">
-          <a href="/"role="tab" class="accordion-title" id="question2-heading" aria-controls="question2"><b>Question 2</b></a>
-          <div id="question2" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="question2-heading">
-              Answer 2
+      <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordian-item>
+          <a href="/" class="accordion-title"><b>Question 2</b></a>
+          <div class="accordion-content" data-tab-content>
+              <b>Answer</b>
           </div>
-        </li>
+        </liv>
+        <ul class="accordion" data-accordion>
+          <li class="accordion-item is-active" data-accordian-item>
+            <a href="/" class="accordion-title"><b>Question 3</b></a>
+            <div class="accordion-content" data-tab-content>
+                <b>Answer</b>
+            </div>
+          </liv>
+
       </ul>
     </div>
   </div>

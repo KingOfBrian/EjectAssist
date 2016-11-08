@@ -16,6 +16,8 @@
   <body>
     #import("body")
     <script src="/styles/js/vendor/jquery.js"></script>
+    <script src="/styles/js//vendor/foundation.min.js"></script>
+
     <!-- <script>
      $(document).foundation();
      </script> -->
