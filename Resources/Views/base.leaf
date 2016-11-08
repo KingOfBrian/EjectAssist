@@ -5,14 +5,19 @@
   <style>
   @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
   </style>
-  <link rel="stylesheet" href="/styles/css/app.css">
-  <link rel="stylesheet" href="styles/css/foundation.css" />
-  <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+  <link rel="stylesheet" href="/styles/css/foundation.css" />
+  <link rel="stylesheet" href="/styles/css/app.css" />
 
+  <script src="/styles/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
   #import("head")
 </head>
   <body>
     #import("body")
+    <script src="/styles/js/vendor/jquery.js"></script>
+    <!-- <script>
+     $(document).foundation();
+     </script> -->
   </body>
 </html>

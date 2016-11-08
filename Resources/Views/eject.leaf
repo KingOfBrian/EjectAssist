@@ -3,13 +3,13 @@
 #export("head") {}
 
 #export("body") {
-  <div class="small-8 large-centered columns message">
+  <div class="small-12 medium-8 large-centered columns message">
     <div class="header">
       <h1>Eject from Interface Builder</h1>
     </div>
 
     <div class="message-container">
-      <div class="small-8 large-centered columns">
+      <div class="tagline">
         <h3>Eject will generate swift code to replace your .xib file.</h3>
       </div>
 
@@ -24,8 +24,14 @@
       <ul class="accordion" data-accordion role="tablist">
         <li class="accordion-item is-active">
           <a href="/"role="tab" class="accordion-title" id="question1-heading" aria-controls="question1"><b>Question 1</b></a>
-          <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-              Question
+          <div id="question1" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="question1-heading">
+              Answer
+          </div>
+        </li>
+        <li class="accordion-item is-active">
+          <a href="/"role="tab" class="accordion-title" id="question2-heading" aria-controls="question2"><b>Question 2</b></a>
+          <div id="question2" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="question2-heading">
+              Answer 2
           </div>
         </li>
       </ul>

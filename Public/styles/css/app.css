@@ -12,8 +12,9 @@ body{
     color: white;
     padding:15 10px;
 		font-family: 'Quicksand', sans-serif;
-}
+    max-width: 900px;
 
+}
 
 .header {
 	font-family: 'Quicksand', sans-serif;
@@ -25,22 +26,24 @@ body{
   border-style: solid;
  	padding-bottom: 3rem; }
 
-.message {
-  margin: 50px;
-}
-
-.message .message-container{
+.message-container{
+  display: block;
   padding-top: 3rem;
 	border-style: solid;
   border-top: none;
 	text-align: center;
 	}
 
-.message form {
-  margin: 10px;
-  margin-top: 15px;
-}
+  form {
+    margin: 20px;
+    }
 
+
+.question-container {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
 
 .summary,
 .variable-warnings pre{
