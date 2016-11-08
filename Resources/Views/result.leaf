@@ -3,12 +3,17 @@
 #export("head") {}
 
 #export("body") {
-<div class="summary">#(summary)</div>
-<div class="warnings">
-<pre>#(variableWarnings)</pre>
-<pre>#(unknownWarnings)</pre>
-</div>
-<div class="message">
-<pre>#(code)</pre>
+<div class="result">
+  <div class="summary">#(summary)</div>
+
+  <div class="variable-warnings">
+    <pre>#(variableWarnings)</pre>
+  </div>
+  <div class="unknown-warnings">
+    <pre unknown>#(unknownWarnings)</pre>
+  </div>
+  <div class="code">
+   <pre>#(code)</pre>
+  </div>
 </div>
 }

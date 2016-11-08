@@ -12,7 +12,7 @@
    *    without disabling user zoom.
    */
 html {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -373,7 +373,7 @@ html {
 *::after {
   box-sizing: inherit; }
 
-body {
+/*body {
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -382,7 +382,7 @@ body {
   color: #0a0a0a;
   background: #fefefe;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale; }*/
 
 img {
   max-width: 100%;
@@ -1224,7 +1224,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;*/
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -1495,6 +1495,7 @@ kbd {
   .button.expanded {
     display: block;
     width: 100%;
+    margin: 50px;
     margin-left: 0;
     margin-right: 0; }
   .button.primary {
@@ -1703,7 +1704,9 @@ label > [type='radio'] {
   margin-right: 0.5rem; }
 
 [type='file'] {
-  width: 100%; }
+  width: 100%;
+  text-align: center;
+}
 
 label {
   display: block;

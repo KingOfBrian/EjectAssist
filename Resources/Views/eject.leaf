@@ -12,10 +12,23 @@
       <div class="small-8 large-centered columns">
         <h3>Eject will generate swift code to replace your .xib file.</h3>
       </div>
+
       <form action="eject" method="POST" enctype="multipart/form-data">
-        <input type="file" name="xib">
+        <label for="FileUpload" class="expanded button">Upload File</label>
+        <input type="file" name="xib" id="FileUpload" class="show-for-sr expanded button">
         <button type="submit" class="eject button">Eject</button>
       </form>
+    </div>
+
+    <div class="question-container">
+      <ul class="accordion" data-accordion role="tablist">
+        <li class="accordion-item is-active">
+          <a href="/"role="tab" class="accordion-title" id="question1-heading" aria-controls="question1"><b>Question 1</b></a>
+          <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+              Question
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 }
