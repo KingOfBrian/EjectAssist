@@ -1496,7 +1496,7 @@ kbd {
     display: block;
     width: 100%;
     /*margin: 20px;*/
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 0; }
   .button.primary {
     background-color: #2199e8;

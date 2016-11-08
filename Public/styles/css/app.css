@@ -5,7 +5,7 @@
 }
 
 body{
-  background-image: url('../../images/dark_dotted2.png');
+  background-color: #1C1F24;
   font-size:18px;
   color: white;
   padding:15 10px;
@@ -19,7 +19,7 @@ body{
     color: white;
     padding:15 10px;
 		font-family: 'Quicksand', sans-serif;
-    max-width: 1000px;
+    max-width: 900px;
 
 }
 
@@ -78,4 +78,9 @@ body{
   font-size: 15px;
   margin-bottom: 20px;
   margin-left: 20px;
+}
+
+.button.expanded {
+  max-width: 50%;
+  text-align: center;
 }
