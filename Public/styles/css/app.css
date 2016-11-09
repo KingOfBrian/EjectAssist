@@ -13,13 +13,13 @@ body{
 }
 
 .message{
-    margin:40px auto;
-    line-height:1.6;
-    font-size:18px;
-    color: white;
-    padding:15 10px;
-		font-family: 'Quicksand', sans-serif;
-    max-width: 900px;
+  margin:40px auto;
+  line-height:1.6;
+  font-size:18px;
+  color: white;
+  padding:15 10px;
+	font-family: 'Quicksand', sans-serif;
+  max-width: 900px;
 
 }
 
@@ -29,6 +29,10 @@ body{
   font-weight: bolder;
 	padding-top: 2.5rem;
  	padding-bottom: 3rem; }
+
+h1 {
+	font-size: 70px;
+}
 
 .tagline {
   text-align: center;
@@ -45,6 +49,19 @@ body{
     margin: 20px;
     }
 
+.eject {
+	font-size: 15px;
+}
+
+.uploader {
+	display: inline-block;
+  vertical-align: middle;
+	color: white;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
 .question-container {
   text-align: center;
   font-weight: bold;
@@ -54,11 +71,22 @@ body{
 
 .question-container h3 {
   text-decoration: underline;
+	margin-bottom: 20px;
 }
 
 .question{
-  text-decoration: underline;
-  font-size: 20px;
+  /*text-decoration: underline;*/
+  /*font-size: 22px;*/
+	text-align: left;
+	margin-top: 10px;
+}
+
+.answer {
+	text-align: left;
+}
+
+.result {
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
 .summary {
@@ -68,7 +96,6 @@ body{
 }
 .variable-warnings pre{
   font-size: 20px;
-  /*font-family: 'Quicksand', sans-serif;*/
   color: red;
   margin: 22px;
   text-align: center;
@@ -85,11 +112,6 @@ body{
   text-align: center;
 }
 
-.uploader {
-	display: inline-block;
-  vertical-align: middle;
-	color: white;
-	margin-left: 10rem;
-	margin-top: 3rem;
-	margin-bottom: 2rem;
+.code {
+	font-size: 15px;
 }

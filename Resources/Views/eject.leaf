@@ -24,18 +24,18 @@
       </div>
 
   <div class="question-container">
-    <h2> FAQs </h2>
+    <h3>Frequently Asked Questions</h3>
       <div class="question">
-        <p>Question</p>
+        <h5>Question</h5>
       </div>
       <div class="answer">
-        <p> Answer </p>
+        <p>Answer</p>
       </div>
       <div class="question">
-        <p>Question</p>
+        <h5>Question</h5>
       </div>
       <div class="answer">
-        <p> Answer </p>
+        <p>Answer</p>
       </div>
     </div>
   </div>

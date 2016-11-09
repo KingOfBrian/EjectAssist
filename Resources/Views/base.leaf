@@ -9,11 +9,7 @@
   <link rel="stylesheet" href="/styles/css/app.css" />
     <link rel="stylesheet" href="/styles/css/atom-one-dark.css" />
 
-
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-
-  <script src="/styles/js/app.js"></script>
-
   <script src="/styles/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
