@@ -1493,7 +1493,7 @@ kbd {
   .button.large {
     font-size: 1.25rem; }
   .button.expanded {
-    display: block;
+    /*display: block;*/
     width: 100%;
     /*margin: 20px;*/
     margin-left: 0px;

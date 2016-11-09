@@ -84,3 +84,12 @@ body{
   max-width: 50%;
   text-align: center;
 }
+
+.uploader {
+	display: inline-block;
+  vertical-align: middle;
+	color: white;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
