@@ -58,8 +58,8 @@ h1 {
   vertical-align: middle;
 	color: white;
 	margin-left: 10rem;
-	margin-top: 3rem;
-	margin-bottom: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
 }
 
 .question-container {
@@ -75,14 +75,12 @@ h1 {
 }
 
 .question{
-  /*text-decoration: underline;*/
-  /*font-size: 22px;*/
-	text-align: left;
+	text-align: center;
 	margin-top: 10px;
 }
 
 .answer {
-	text-align: left;
+	text-align: center;
 }
 
 .result {
@@ -94,6 +92,7 @@ h1 {
   font-size: 30px;
   margin-top: 20px;
 }
+
 .variable-warnings pre{
   font-size: 20px;
   color: red;
