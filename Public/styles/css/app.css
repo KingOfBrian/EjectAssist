@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+  background-color: #1C1F24;
+  font-size:18px;
+  color: white;
+  padding:15 10px;
+  line-height:1.6;
+}
+
+.message{
+  margin:40px auto;
+  line-height:1.6;
+  font-size:18px;
+  color: white;
+  padding:15 10px;
+	font-family: 'Quicksand', sans-serif;
+  max-width: 900px;
+
+}
+
+.header {
+	font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+	padding-top: 2.5rem;
+ 	padding-bottom: 3rem; }
+
+h1 {
+	font-size: 70px;
+}
+
+.tagline {
+  text-align: center;
+  }
+
+.message-container{
+  display: block;
+  padding-top: 1rem;
+  border-top: none;
+	text-align: center;
+	}
+
+  form {
+    margin: 20px;
+    }
+
+.eject {
+	font-size: 15px;
+}
+
+.uploader {
+	display: inline-block;
+  vertical-align: middle;
+	color: white;
+	margin-left: 10rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+
+.question-container {
+  text-align: center;
+  font-weight: bold;
+  margin: 50px;
+  margin-top: 10rem;
+}
+
+.question-container h3 {
+  text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+.question{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.answer {
+	text-align: center;
+}
+
+.result {
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+.summary {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.variable-warnings pre{
+  font-size: 20px;
+  color: red;
+  margin: 22px;
+  text-align: center;
+}
+
+.unknown-warnings {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.button.expanded {
+  max-width: 50%;
+  text-align: center;
+}
+
+.code {
+	font-size: 15px;
+}

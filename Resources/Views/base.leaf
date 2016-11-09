@@ -2,11 +2,21 @@
 <html>
 <head>
   <title>Eject</title>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/app.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+  </style>
+  <link rel="stylesheet" href="/styles/css/foundation.css" />
+  <link rel="stylesheet" href="/styles/css/app.css" />
+    <link rel="stylesheet" href="/styles/css/atom-one-dark.css" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+  <script src="/styles/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   #import("head")
 </head>
   <body>
     #import("body")
+
   </body>
 </html>
