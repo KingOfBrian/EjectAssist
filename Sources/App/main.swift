@@ -50,7 +50,4 @@ drop.post("eject") { req in
     ])
 }
 
-// Future version should allow for browsing:
-drop.resource("ejection", EjectionController())
-
 drop.run()
