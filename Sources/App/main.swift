@@ -42,12 +42,18 @@ drop.post("eject") { req in
         summary.append(joiningWords.removeFirst())
         summary.append("\(unknownWarnings.count) unknown attributes")
     }
-    return try drop.view.make("result", [
+    let information =  [
         "summary": summary.joined(separator: " "),
         "code": code.joined(separator: "\n"),
         "variableWarnings": variableWarnings.joined(separator: "\n"),
         "unknownWarnings": unknownWarnings.joined(separator: "\n"),
-    ])
+        ]
+    if req.multipart?["ajax"] != nil {
+        return try drop.view.make("inline-result", information)
+    }
+    else {
+        return try drop.view.make("result", information)
+    }
 }
 
 drop.run()

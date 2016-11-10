@@ -1,42 +1,64 @@
 #extend("base")
 
-#export("head") {}
+#export("head") {
+<div class="container">
+  <section class="header">
+    <h1>Eject</h1>
+    <h3>from Interface Builder</h3>
+
+    <div class="row value-props">
+      <div class="six columns value-prop">
+        <img class="value-img" src="images/swift.svg">
+        Generate swift code to replace your .xib files
+      </div>
+      <div class="six columns value-prop">
+        <img class="value-img" src="images/interface_builder.png">
+        Stop using Interface Builder when Interface Builder is no longer helping.
+      </div>
+    </div>
+
+
+    <form action="eject" method="POST" enctype="multipart/form-data" class="box has-advanced-upload">
+      <div class="row"><h3>Drag a .xib file below to try online</h3></div>
+      <div class="box__input">
+        <svg class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z"/></svg>
+        <input type="file" name="xib" id="file" class="box__file" />
+        <label for="file"><strong>Choose a xib</strong><span class="box__dragndrop"> or drag it here</span>.</label>
+        <button type="submit" class="box__button">Upload</button>
+    </div>
+    <div class="box__uploading">Processing</div>
+    <div class="box__error">There was an error! Please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a></div>
+  </form>
+
+  <div class="result"></div>
+
+  </section>
+</div>
+}
 
 #export("body") {
-  <div class="small-12 medium-8 large-centered columns message">
-    <div class="header">
-      <div class"eject"><h1>Eject</h1></div>
-        <h3>from Interface Builder</h3>
-    </div>
+<div class="container">
+  <div class="column">
+    <div class="question-container">
 
-    <div class="message-container">
-      <div class="tagline">
-        <h4>Eject will generate swift code to replace your .xib file.</h4>
-      </div>
+<h5>Why?</h5>
+<p>One common pain point with Interface Builder is that as a view becomes more dynamic and is managed more programatically, Interface Builder becomes less helpful. This tool lets developers use Interface Builder without that concern, giving them an Eject button to hit when Interace Builder starts getting in the way, and provides an easy path to transition to full programatic view layout.</p>
 
-      <form action="eject" method="POST" enctype="multipart/form-data">
-          <!-- <label for="FileUpload" class="expanded button">Upload File</label> -->
-          <div class="uploader">
-            <input type="file" name="xib" id="FileUpload">
-          </div>
-          <button type="submit" class="expanded eject button">Eject</button>
-        </form>
-      </div>
+<h5>But But</h5>
+<p>Yes, I understand that this is probably a bad idea. But it might not be.</p>
 
-  <div class="question-container">
-    <h3>Frequently Asked Questions</h3>
-      <div class="question">
-        <h5>Question</h5>
-      </div>
-      <div class="answer">
-        <p>Answer</p>
-      </div>
-      <div class="question">
-        <h5>Question</h5>
-      </div>
-      <div class="answer">
-        <p>Answer</p>
-      </div>
+<h5>Does it work?</h5>
+<p>Eject is not feature complete. Eject supports the majority of UIKit, and if eject encounters something that it does not understand, it will generate a warning. If you encounter any warnings, please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a>. The issue page will also list all known missing features.</p>
+<p>Eject uses the user labels for variable names, and doesn't protect against duplicate or reserved variable names. Just clean up the labels inside Interface Builder and try again. Eject will warn you if duplicate variable names are found.</p>
+<p>Eject does not generate any container class code. It's expected to be copied and pasted into loadView. I'd like to be more helpful here, I'm just not sure how. Drop a <a href='mailto:brian.king@raizlabs.com'>line</a> if you have thoughts</p>
+
+<h5>Can I run Eject locally?</h5>
+<p>Eject was originally written as a Mac OSX application. It's available on <a href='https://github.com/Raizlabs/Eject/'>Github</a>. The README contains more information for running on the command line.
+
+<h5>How does it run on the Web?</h5>
+<p>This website is hosted on <a href='https://heroku.com/'>heroku</a>, hosted inside a simple <a href='https://vapor.codes/'>Vapor</a> application <a href='https://github.com/KingOfBrian/EjectAssist/'>Eject Assist</a>. If you're interested in writing some vapor code, check out the issue list!</p>
+
     </div>
   </div>
+</div>
 }

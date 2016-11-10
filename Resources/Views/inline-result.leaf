@@ -1,0 +1,11 @@
+  <h3>#(summary)</h3>
+  <div class="code">
+    <pre><code class="swift">#(code)</code></pre>
+  </div>
+
+  <div class="variable-warnings">
+    <pre>#(variableWarnings)</pre>
+  </div>
+  <div class="unknown-warnings">
+    <pre unknown>#(unknownWarnings)</pre>
+  </div>

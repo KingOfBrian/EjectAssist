@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Eject</title>
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
-  </style>
-  <link rel="stylesheet" href="/styles/css/foundation.css" />
-  <link rel="stylesheet" href="/styles/css/app.css" />
-    <link rel="stylesheet" href="/styles/css/atom-one-dark.css" />
+<html lang="en" class="no-js">
+  <head>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-  <script src="/styles/js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Eject from Interface Builder</title>
+  <meta name="description" content="a tool to generate code for xib files">
+  <meta name="author" content="Brian King">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/styles/css/normalize.css">
+  <link rel="stylesheet" href="/styles/css/skeleton.css">
+  <link rel="stylesheet" href="/styles/css/app.css">
+  <link rel="stylesheet" href="/styles/css/box.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="/styles/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
   #import("head")
 </head>
-  <body>
-    #import("body")
+<body>
+  #import("body")
 
-  </body>
+<script src='styles/js/file.js'></script>
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+</body>
 </html>

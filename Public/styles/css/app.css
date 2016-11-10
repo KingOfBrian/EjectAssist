@@ -1,116 +1,86 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-* {
-	box-sizing: border-box;
-}
-
-body{
-  background-color: #1C1F24;
-  font-size:18px;
-  color: white;
-  padding:15 10px;
-  line-height:1.6;
-}
-
-.message{
-  margin:40px auto;
-  line-height:1.6;
-  font-size:18px;
-  color: white;
-  padding:15 10px;
-	font-family: 'Quicksand', sans-serif;
-  max-width: 900px;
-
-}
-
+.container {
+    max-width: 800px; }
 .header {
-	font-family: 'Quicksand', sans-serif;
-  text-align: center;
-  font-weight: bolder;
-	padding-top: 2.5rem;
- 	padding-bottom: 3rem; }
-
-h1 {
-	font-size: 70px;
+    text-align: center; }
+.header h1 {
+    font-size: 80pt;
+    font-weight: 800;
 }
-
-.tagline {
-  text-align: center;
-  }
-
-.message-container{
-  display: block;
-  padding-top: 1rem;
-  border-top: none;
-	text-align: center;
-	}
-
-  form {
-    margin: 20px;
-    }
-
-.eject {
-	font-size: 15px;
-}
-
-.uploader {
-	display: inline-block;
-  vertical-align: middle;
-	color: white;
-	margin-left: 10rem;
-	margin-top: 5rem;
-	margin-bottom: 1rem;
-}
-
-.question-container {
-  text-align: center;
-  font-weight: bold;
-  margin: 50px;
-  margin-top: 10rem;
-}
-
-.question-container h3 {
-  text-decoration: underline;
-	margin-bottom: 20px;
-}
-
-.question{
-	text-align: center;
-	margin-top: 10px;
-}
-
-.answer {
-	text-align: center;
-}
-
-.result {
-	font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
-
-.summary {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
-}
-
-.variable-warnings pre{
-  font-size: 20px;
-  color: red;
-  margin: 22px;
-  text-align: center;
-}
-
-.unknown-warnings {
-  font-size: 15px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-.button.expanded {
-  max-width: 50%;
-  text-align: center;
-}
-
+.header h3 {
+    font-size: 20pt; }
+.value-prop {
+    margin-top: 1rem; }
+.value-props {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
 .code {
-	font-size: 15px;
+    text-align: left;
+}
+.question-container h5 {
+    font-weight: 800;
+}
+.value-img {
+    display: block;
+    text-align: center;
+    margin: 2.5rem auto 0; }
+.navbar {
+    display: none; }
+
+/* Larger than phone */
+@media (min-width: 550px) {
+    .header {
+        margin-top: 18rem; }
+    .value-props {
+        margin-top: 9rem;
+        margin-bottom: 7rem; }
+    .value-img {
+        margin-bottom: 1rem; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    /* Navbar */
+    .navbar + .docs-section {
+        border-top-width: 0; }
+    .navbar,
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 6.5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee; }
+    .navbar-spacer {
+        display: none; }
+    .navbar > .container {
+        width: 100%; }
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0; }
+    .navbar-item {
+        position: relative;
+        float: left;
+        margin-bottom: 0; }
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 35px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222; }
+    .navbar-link.active {
+        color: #33C3F0; }
+    .has-docked-nav .navbar {
+        position: fixed;
+        top: 0;
+        left: 0; }
+    .has-docked-nav .navbar-spacer {
+        display: block; }
+    /* Re-overiding the width 100% declaration to match size of % based container */
+    .has-docked-nav .navbar > .container {
+        width: 80%; }
 }
