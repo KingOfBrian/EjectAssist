@@ -32,12 +32,6 @@
 		   return files.count == 1
                };
 	   
-           // letting the server side to know we are going to make an Ajax request
-           var ajaxFlag = document.createElement( 'input' );
-           ajaxFlag.setAttribute( 'type', 'hidden' );
-           ajaxFlag.setAttribute( 'name', 'ajax' );
-           ajaxFlag.setAttribute( 'value', 1 );
-           form.appendChild( ajaxFlag );
 	   
            // automatically submit the form on file select
            input.addEventListener( 'change', function( e ) {
@@ -84,11 +78,11 @@
                    e.preventDefault();
 
                    // gathering the form data
-                   var ajaxData = new FormData( form );
+                   var ajaxData = new FormData( );
                    if( droppedFile ) {
-		       ajaxData.delete( input.getAttribute( 'name' ) );
                        ajaxData.append( input.getAttribute( 'name' ), droppedFile );
                    }
+		   ajaxData.append( 'ajax', 1 );
 
                    // ajax request
                    var ajax = new XMLHttpRequest();
