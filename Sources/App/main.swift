@@ -18,7 +18,7 @@ drop.post("eject") { req in
         let data = Data(bytes: bytes)
         let document = try XIBParser(data: data).document
         document.scanForDuplicateVariableNames()
-        code = document.generateCode()
+        code = try document.generateCode()
         unknownWarnings = document.warnings.map() { (warning) -> String? in
             if case let .unknownAttribute(message) = warning {
                 return message
