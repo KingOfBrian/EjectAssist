@@ -9,7 +9,7 @@
     <div class="row value-props">
       <div class="six columns value-prop">
         <img class="value-img" src="images/swift.svg">
-        Generate swift code to replace your .xib files
+        Generate swift code to replace your <code>.xib</code>s
       </div>
       <div class="six columns value-prop">
         <img class="value-img" src="images/interface_builder.png">
@@ -19,7 +19,7 @@
 
 
     <form action="eject" method="POST" enctype="multipart/form-data" class="box has-advanced-upload">
-      <div class="row"><h3>Drop a .xib file here to give it a shot</h3></div>
+      <div class="row"><h3>Drop a <code>.xib</code> file here to give it a shot</h3></div>
       <div class="box__input">
         <svg class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z"/></svg>
         <input type="file" name="xib" id="file" class="box__file" />
@@ -46,13 +46,16 @@
 <h5>Why?</h5>
 <p>One common pain point with Interface Builder is that as a view becomes more dynamic and is managed more programatically, Interface Builder becomes less helpful. This tool lets developers use Interface Builder without that concern, giving them an Eject button to hit when Interace Builder starts getting in the way, and provides an easy path to transition to full programatic view layout.</p>
 
-<h5>But But</h5>
-<p>Yes, I understand that this is probably a bad idea. But it might not be.</p>
-
 <h5>Does it work?</h5>
-<p>Eject is not feature complete. Eject supports the majority of UIKit, and if eject encounters something that it does not understand, it will generate a warning. If you encounter any warnings, please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a>. The issue page will also list all known missing features.</p>
+<p>Eject should be considered Alpha quality, but it supports the majority of UIKit. If Eject encounters something in the <code>.xib</code> file it does not understand, it will generate a warning. If you encounter any warnings, please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a>. The issue page will also list all known missing features.</p>
+
+<p>Although Eject aims to generate perfect code out of the box, there are still a few bugs that need to be resolved. There's a good chance that there will be a few small compile errors you will need to fix. Usually this involves moving an assignment into the constructor. There are also a few bugs with the generated code that will cause runtime errors. For instance there is a <a href='https://github.com/Raizlabs/Eject/issues/14'>bug</a> with UISegmentedControl that calls <code>setTitle(xxx, forSegmentAt: y)</code> instead of <code>insertSegment(withTitle: xxx, at: y, animated: true)</code>. I'm hoping that you can help me find more bugs before my next bug-fix day.</p>
+
 <p>Eject uses the user labels for variable names, and doesn't protect against duplicate or reserved variable names. Just clean up the labels inside Interface Builder and try again. Eject will warn you if duplicate variable names are found.</p>
+
 <p>Eject does not generate any container class code. It's expected to be copied and pasted into loadView. I'd like to be more helpful here, I'm just not sure how. Send me an <a href='mailto:brian.king@raizlabs.com'>email</a> or message <a href='https://twitter.com/KingOfBrian/'>@KingOfBrian</a> if you have thoughts</p>
+
+<p>Eject does not aim to support Storyboards or TraitCollections for Version 1. It shouldn't be hard technically, but I'm not sure how to generate good code for <a href='https://github.com/Raizlabs/Eject/issues/9'>trait collections</a>, <a href='https://github.com/Raizlabs/Eject/issues/16'>static cells</a> or <a href='https://github.com/Raizlabs/Eject/issues/15'>seques</a>.</p>
 
 <h5>Can I run Eject locally?</h5>
 <p>Eject is also a Mac OSX CLI tool. It's available on <a href='https://github.com/Raizlabs/Eject/'>Github</a>. The README contains more information for running on the command line.</p>
