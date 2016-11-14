@@ -16,7 +16,11 @@ drop.post("eject") { req in
     if let xibPart = req.multipart?["xib"], let file = xibPart.file {
         let bytes = file.data
         let data = Data(bytes: bytes)
-        let document = try XIBParser(data: data, configuration: Configuration()).document
+        var configuration = Configuration()
+        if let multipart = req.multipart?["constraint"], let name = multipart.string, let constraint = ConstraintConfiguration(rawValue: name) {
+            configuration.constraint = constraint
+        }
+        let document = try XIBParser(data: data, configuration: configuration).document
         document.scanForDuplicateVariableNames()
         code = try document.generateCode()
         unknownWarnings = document.warnings.map() { (warning) -> String? in

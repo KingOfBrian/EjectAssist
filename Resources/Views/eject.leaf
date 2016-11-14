@@ -25,9 +25,20 @@
         <input type="file" name="xib" id="file" class="box__file" />
         <label for="file"><span class="box__dragndrop"><strong>Or click here</strong></span>.</label>
         <button type="submit" class="box__button">Upload</button>
-    </div>
-    <div class="box__uploading">Processing</div>
-    <div class="box__error">There was an error! Please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a></div>
+      </div>
+      <div class="box__uploading">Processing</div>
+      <div class="box__error">There was an error! Please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a></div>
+
+      <div class="row configuration">
+        <div class="eight columns value-prop"></div>
+        <div class="four columns value-prop">
+          Constraint Style:
+          <select class="u-half-width" name="constraint">
+            <option value="Anchorage">Anchorage</option>
+            <option value="NSLayoutAnchor">Layout Anchors</option>
+          </select>
+         </div>
+      </div>
   </form>
 <br/>
 <br/>

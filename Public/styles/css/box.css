@@ -3,7 +3,10 @@
     font-size: 1.25rem; /* 20 */
     position: relative;
     padding-top: 40px;
-    padding-bottom: 40px;
+}
+.configuration
+{
+    padding-top: 40px;
 }
 .box.has-advanced-upload
 {

@@ -13,6 +13,7 @@
        Array.prototype.forEach.call( forms, function( form ) {
            
 	   var input		 = form.querySelector( 'input[type="file"]' ),
+           constraint    = form.querySelector( 'select[name="constraint"]' ),
 	       label		 = form.querySelector( 'label' ),
 	       errorMsg	         = form.querySelector( '.box__error' ),
 	       successDiv        = document.querySelector( '.result' ),
@@ -60,7 +61,7 @@
                    });
                });
                form.addEventListener( 'drop', function( e ) {
-		   updateFiles( e.dataTransfer.files )
+          		   updateFiles( e.dataTransfer.files )
                });
            }
            
@@ -82,7 +83,8 @@
                    if( droppedFile ) {
                        ajaxData.append( input.getAttribute( 'name' ), droppedFile );
                    }
-		   ajaxData.append( 'ajax', 1 );
+                   ajaxData.append( 'constraint', constraint.value );
+                   ajaxData.append( 'ajax', 1 );
 
                    // ajax request
                    var ajax = new XMLHttpRequest();
@@ -95,7 +97,7 @@
 			   form.parentNode.removeChild(form)
                        }
                        else {
-			   errorMsg.textContent = "There was an error. Please log an i"
+			   errorMsg.textContent = "There was an error. Please log an issue"
 			   form.classList.add( 'is-error' );
 		       }
                    };
