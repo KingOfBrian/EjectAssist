@@ -49,9 +49,9 @@
 <h5>Does it work?</h5>
 <p>Eject should be considered Alpha quality, but it supports the majority of UIKit. If Eject encounters something in the <code>.xib</code> file it does not understand, it will generate a warning. If you encounter any warnings, please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a>. The issue page will also list all known missing features.</p>
 
-<p>Although Eject aims to generate perfect code out of the box, there are still a few bugs that need to be resolved. There's a good chance that there will be a few small compile errors you will need to fix. Usually this involves moving an assignment into the constructor. There are also a few bugs with the generated code that will cause runtime errors. For instance there is a <a href='https://github.com/Raizlabs/Eject/issues/14'>bug</a> with UISegmentedControl that calls <code>setTitle(xxx, forSegmentAt: y)</code> instead of <code>insertSegment(withTitle: xxx, at: y, animated: true)</code>. I'm hoping that you can help me find more bugs before my next bug-fix day.</p>
+<p>Although Eject aims to generate perfect code out of the box, there are still a few bugs that need to be resolved. There's a good chance that there will be a few small compile errors you will need to fix. Usually this involves moving an assignment into the constructor. There are also a few bugs with the generated code that will cause runtime errors. For instance there is a <a href='https://github.com/Raizlabs/Eject/issues/14'>bug</a> with UISegmentedControl that calls <code>setTitle(xxx, forSegmentAt: y)</code> instead of <code>insertSegment(withTitle: xxx, at: y, animated: true)</code>.</p>
 
-<p>Eject uses the user labels for variable names, and doesn't protect against duplicate or reserved variable names. Just clean up the labels inside Interface Builder and try again. Eject will warn you if duplicate variable names are found.</p>
+<p>Eject uses the user labels for variable names. It will warn you if duplicate variable names are found, and will suffix them with a number to make sure the code compiles.</p>
 
 <p>Eject does not generate any container class code. It's expected to be copied and pasted into loadView. I'd like to be more helpful here, I'm just not sure how. Send me an <a href='mailto:brian.king@raizlabs.com'>email</a> or message <a href='https://twitter.com/KingOfBrian/'>@KingOfBrian</a> if you have thoughts</p>
 
@@ -62,7 +62,6 @@
 
 <h5>How does it run on the Web?</h5>
 <p>This website is hosted on <a href='https://heroku.com/'>heroku</a>, hosted inside a simple <a href='https://vapor.codes/'>Vapor</a> application <a href='https://github.com/KingOfBrian/EjectAssist/'>Eject Assist</a>. If you're interested in writing some vapor code, check out the issue list!</p>
-
     </div>
   </div>
 </div>
