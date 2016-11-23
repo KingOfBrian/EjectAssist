@@ -60,11 +60,11 @@
 <h5>Does it work?</h5>
 <p>Eject should be considered Alpha quality, but it supports the majority of UIKit. If Eject encounters something in the <code>.xib</code> file it does not understand, it will generate a warning. If you encounter any warnings, please log an <a href='https://github.com/Raizlabs/Eject/issues'>Issue</a>. The issue page will also list all known missing features.</p>
 
-<p>Although Eject aims to generate perfect code out of the box, there are still a few bugs that need to be resolved. There's a good chance that there will be a few small compile errors you will need to fix. Usually this involves moving an assignment into the constructor. There are also a few bugs with the generated code that will cause runtime errors. For instance there is a <a href='https://github.com/Raizlabs/Eject/issues/14'>bug</a> with UISegmentedControl that calls <code>setTitle(xxx, forSegmentAt: y)</code> instead of <code>insertSegment(withTitle: xxx, at: y, animated: true)</code>.</p>
+<p>Although Eject aims to generate perfect code out of the box, there are still a few bugs that need to be resolved. There's a good chance that there will be a few small compile errors you will need to fix. Usually this involves moving an assignment into the constructor. There may also be a few bugs with the generated code that will cause runtime errors, but Eject should do the majority of the busy work.</p>
 
 <p>Eject uses the user labels for variable names. It will warn you if duplicate variable names are found, and will suffix them with a number to make sure the code compiles.</p>
 
-<p>Eject does not generate any container class code. It's expected to be copied and pasted into loadView. I'd like to be more helpful here, I'm just not sure how. Send me an <a href='mailto:brian.king@raizlabs.com'>email</a> or message <a href='https://twitter.com/KingOfBrian/'>@KingOfBrian</a> if you have thoughts</p>
+<p>Eject does not generate any container class code. It's expected to be copied and pasted into loadView, or your cell initializer. I'd like to be more helpful here, I'm just not sure how. Send me an <a href='mailto:brian.king@raizlabs.com'>email</a> or message <a href='https://twitter.com/KingOfBrian/'>@KingOfBrian</a> if you have thoughts</p>
 
 <p>Eject does not aim to support Storyboards or TraitCollections for Version 1. It shouldn't be hard technically, but I'm not sure how to generate good code for <a href='https://github.com/Raizlabs/Eject/issues/9'>trait collections</a>, <a href='https://github.com/Raizlabs/Eject/issues/16'>static cells</a> or <a href='https://github.com/Raizlabs/Eject/issues/15'>seques</a>.</p>
 
