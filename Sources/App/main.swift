@@ -21,7 +21,6 @@ drop.post("eject") { req in
             configuration.constraint = constraint
         }
         let document = try XIBParser(data: data, configuration: configuration).document
-        document.scanForDuplicateVariableNames()
         code = try document.generateCode()
         unknownWarnings = document.warnings.map() { (warning) -> String? in
             if case let .unknownAttribute(message) = warning {
