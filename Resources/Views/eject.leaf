@@ -66,13 +66,13 @@
 
 <p>Eject does not generate any container class code. It's expected to be copied and pasted into loadView, or your cell initializer. I'd like to be more helpful here, I'm just not sure how. Send me an <a href='mailto:brian.king@raizlabs.com'>email</a> or message <a href='https://twitter.com/KingOfBrian/'>@KingOfBrian</a> if you have thoughts</p>
 
-<p>Eject does not aim to support Storyboards or TraitCollections for Version 1. It shouldn't be hard technically, but I'm not sure how to generate good code for <a href='https://github.com/Raizlabs/Eject/issues/9'>trait collections</a>, <a href='https://github.com/Raizlabs/Eject/issues/16'>static cells</a> or <a href='https://github.com/Raizlabs/Eject/issues/15'>seques</a>.</p>
+<p>Eject does not aim to support Storyboards or TraitCollections for Version 1. It shouldn't be hard technically, but I'm not sure how to generate good code for <a href='https://github.com/Raizlabs/Eject/issues/9'>trait collections</a>, <a href='https://github.com/Raizlabs/Eject/issues/16'>static cells</a> or <a href='https://github.com/Raizlabs/Eject/issues/15'>segues</a>.</p>
 
 <h5>Can I run Eject locally?</h5>
 <p>Eject is also a Mac OSX CLI tool. It's available on <a href='https://github.com/Raizlabs/Eject/'>Github</a>. The README contains more information for running on the command line.</p>
 
 <h5>How does it run on the Web?</h5>
-<p>This website is hosted on <a href='https://heroku.com/'>heroku</a>, hosted inside a simple <a href='https://vapor.codes/'>Vapor</a> application <a href='https://github.com/KingOfBrian/EjectAssist/'>Eject Assist</a>. If you're interested in writing some vapor code, check out the issue list!</p>
+<p>This website is hosted on <a href='https://heroku.com/'>heroku</a>, inside a simple <a href='https://vapor.codes/'>Vapor</a> application <a href='https://github.com/KingOfBrian/EjectAssist/'>Eject Assist</a>. If you're interested in writing some vapor code, check out the issue list!</p>
     </div>
   </div>
 </div>
